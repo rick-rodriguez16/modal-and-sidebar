@@ -1,6 +1,16 @@
-import React, {useContext} from 'react';
+// you can import properties using useContext from context.js this way:
+// 
 import { FaBars } from 'react-icons/fa';
-import { AppContext, useGlobalContext } from './context';
+
+//   import React, {useContext} from 'react';
+//   import { AppContext } from './context';
+//
+// and then destructure within the Home function using:
+//
+//   const { openSidebar, openModal } = useContext(AppContext);
+
+// or you can use your custom hook in context.js
+import { useGlobalContext } from './context';
 
 const Home = () => {
     
